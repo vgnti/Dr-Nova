@@ -1,0 +1,35 @@
+.label {
+	font-size       : 12pt; 
+	text-decoration : none;
+	border-bottom   : 0;
+}
+
+.icon {
+	font-size : 22pt;
+	color     : white;
+}
+
+ion-menu {
+
+	--ion-background-color: linear-gradient(to right, #4facfe, #00f2fe);
+	--ion-text-color: var(--ion-color-primary-contrast);
+  
+	ion-toolbar {
+	  --background: transparent;
+	}
+  
+	ion-list {/* optional, but it needs when you use gradient as a background color.*/
+	  background    : transparent;
+	  padding-left  : 20px;
+	  padding-right : 20px;
+	  font-size     : 18px;
+	}
+
+    ion-label {
+	  background    : transparent;
+	  padding-left  : 20px;
+	  padding-right : 20px;
+	  font-size     : 18px;	
+	}
+
+  }

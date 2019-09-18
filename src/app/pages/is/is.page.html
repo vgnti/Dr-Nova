@@ -1,0 +1,53 @@
+<ion-header no-border>
+   <ion-toolbar>
+      <ion-buttons slot="start">
+         <ion-menu-button autoHide="false"></ion-menu-button>
+         <div class="head_mid"> &nbsp; </div>
+         <div class="head_end" routerLink="notifications">
+            <ion-icon name="notifications-outline" class="icon"></ion-icon>
+         </div>
+         <div class="head_end">
+            <ion-icon name="search" class="icon"></ion-icon>
+         </div>
+      </ion-buttons>
+   </ion-toolbar>
+</ion-header>
+
+<div class="head-txt">
+   <strong>Investigations</strong><br>
+</div>
+
+<ion-content [scrollEvents]="true">
+  	
+   <div padding class='spaces'>
+      <div class="pandora-box">
+        <ion-grid>
+           <ion-row>
+             <ion-col size="10" class="con-txt" >THORAX PA + LATn</ion-col>
+             <ion-col class="con2-txt"></ion-col>
+           </ion-row>   
+           <ion-row>
+              <ion-col size="10" class="con-txt" >ALBUMIN</ion-col>
+              <ion-col class="con2-txt">2.00n</ion-col>
+           </ion-row>  
+           <ion-row>
+              <ion-col size="10" class="con-txt" >CHEST - LARGE FILM - SINGLE</ion-col>
+              <ion-col class="con2-txt"></ion-col>
+           </ion-row>  
+           <ion-row>
+              <ion-col size="10" class="con-txt" >CREATININE CLEARANCE TEST</ion-col>
+              <ion-col class="con2-txt"></ion-col>
+           </ion-row> 
+           <ion-row>
+              <ion-col size="10" class="con-txt" >ABDOMEN AP</ion-col>
+              <ion-col class="con2-txt"></ion-col>
+           </ion-row>   
+           <ion-row>
+              <ion-col size="10" class="con-txt" >HAEMOGLOBIN</ion-col>
+              <ion-col class="con2-txt">16.00</ion-col>
+           </ion-row>                                    
+        </ion-grid>
+      </div>     
+    </div>
+
+</ion-content>

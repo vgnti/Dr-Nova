@@ -1,0 +1,217 @@
+<ion-header no-border>
+  <ion-toolbar>
+     <ion-buttons slot="start">
+        <ion-menu-button autoHide="false"></ion-menu-button>
+        <div class="head_mid"> &nbsp; </div>
+        <div class="head_end" routerLink="notifications">
+           <ion-icon name="notifications-outline" class="icon"></ion-icon>
+        </div>
+        <div class="head_end">
+           <ion-icon name="search" class="icon"></ion-icon>
+        </div>  
+     </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<div class="head-txt">
+  <strong>View EMR</strong><br>
+</div>
+
+<div>
+  <ion-segment [(ngModel)]="section" scrollable="true">
+   <ion-segment-button value="one">
+      Patient Profile
+   </ion-segment-button>
+   <ion-segment-button value="two">
+      Vitals
+   </ion-segment-button>
+   <ion-segment-button value="three">
+      Family/Social History
+    </ion-segment-button>
+    <ion-segment-button value="four">
+      Active Diagnosis
+    </ion-segment-button>
+    <ion-segment-button value="five">
+      Active Medications
+    </ion-segment-button>
+    <ion-segment-button value="six">
+      Investigations
+    </ion-segment-button> 
+    <ion-segment-button value="seven">
+      Progress Note
+    </ion-segment-button>          
+ </ion-segment>
+</div>
+
+<ion-content [scrollEvents]="true">
+  <div [ngSwitch]="section" Class="label">
+   <ion-list *ngSwitchCase="'one'">
+     <div padding class='spaces'>
+        <div class="pandora-box">
+          <ion-grid>
+            <ion-row>   
+              <ion-col class="con-txt" >Tan Sri William Howard Wilcox</ion-col>
+            </ion-row>   
+            <ion-row>
+              <ion-col class="con-txt" >PRN</ion-col>
+              <ion-col class="con2-txt">00018</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="con-txt" >Born</ion-col>
+              <ion-col class="con2-txt">19-Nov-1948(70Y 11M)</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="con-txt" >Gender</ion-col>
+              <ion-col class="con2-txt">Male</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="con-txt" >Marital</ion-col>
+              <ion-col class="con2-txt">Married</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="con-txt" >Race</ion-col>
+              <ion-col class="con2-txt">Caucasian</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="con-txt" >Religion</ion-col>
+              <ion-col class="con2-txt">Protestant</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="con-txt" >Nationality</ion-col>
+              <ion-col class="con2-txt">Malaysian</ion-col>
+            </ion-row> 
+            <ion-row>
+              <ion-col class="con-txt" >Contact</ion-col>
+              <ion-col class="con2-txt">60 752525</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="con-txt" >Weight</ion-col>
+              <ion-col class="con2-txt">55 kg</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="con-txt" >Height</ion-col>
+              <ion-col class="con2-txt">154 cm</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="con-txt" >BMI</ion-col>
+              <ion-col class="con2-txt">Normal</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="con-txt" >LMP</ion-col>
+              <ion-col class="con2-txt"> - </ion-col>
+            </ion-row>                                     
+          </ion-grid>
+        </div>
+     </div> 
+   </ion-list>
+   <ion-list *ngSwitchCase="'two'">
+      <div padding class='spaces'>
+        <div class="pandora-box">
+          <ion-grid>
+             <ion-row>
+                <ion-col class="con-txt" >Respiration</ion-col>
+                <ion-col class="con2-txt">17 x/min</ion-col>
+             </ion-row>   
+             <ion-row>
+                <ion-col class="con-txt" >Pulse</ion-col>
+                <ion-col class="con2-txt">79 x/min</ion-col>
+             </ion-row>  
+             <ion-row>
+                <ion-col class="con-txt" >Temperature</ion-col>
+                <ion-col class="con2-txt">37 x/min</ion-col>
+             </ion-row>  
+             <ion-row>
+                <ion-col class="con-txt" >Blood Pressure</ion-col>
+                <ion-col class="con2-txt">120/90 mmHg</ion-col>
+             </ion-row>             
+          </ion-grid>
+        </div>  
+      </div>
+   </ion-list>
+   <ion-list *ngSwitchCase="'three'">
+      <div padding class='spaces'>
+        <div class="pandora-box">
+          <div class="txt-box">
+            <span class="h1">Family History</span><br>
+            Hereditary Asthma from father side.<br>
+            <br>
+            <span class="h1">Social History</span><br>
+            Patient is marriage.<br>
+            Patient is currenty retired.<br>
+            Patient is not using any tobacco products.<br>
+          </div>
+        </div>   
+      </div>
+   </ion-list>
+   <ion-list *ngSwitchCase="'four'">
+     <div padding class='spaces'>
+       <div class="pandora-box">
+         <div class="txt-box">
+           Asthma Attack (20/07/2019)<br>
+           <br>
+           The lining of the airways - swollen and inflamed<br>
+           Severe wheezing when breathing both in and out<br>
+           Chest tightness or pressure<br>
+         </div>
+       </div>
+     </div>
+   </ion-list>
+   <ion-list *ngSwitchCase="'five'">
+     <div padding class='spaces'>
+        <div class="pandora-box">
+          <div class="txt-box">
+            Intubation, mechanical ventilation and oxygen<br>
+            <br>
+            Ipratropium (Atrovent)<br>
+          </div>
+        </div> 
+     </div>
+   </ion-list>
+   <ion-list *ngSwitchCase="'six'">
+      <div padding class='spaces'>
+        <div class="pandora-box">
+          <ion-grid>
+             <ion-row>
+               <ion-col size="10" class="con-txt" >THORAX PA + LATn</ion-col>
+               <ion-col class="con2-txt"></ion-col>
+             </ion-row>   
+             <ion-row>
+                <ion-col size="10" class="con-txt" >ALBUMIN</ion-col>
+                <ion-col class="con2-txt">2.00n</ion-col>
+             </ion-row>  
+             <ion-row>
+                <ion-col size="10" class="con-txt" >CHEST - LARGE FILM - SINGLE</ion-col>
+                <ion-col class="con2-txt"></ion-col>
+             </ion-row>  
+             <ion-row>
+                <ion-col size="10" class="con-txt" >CREATININE CLEARANCE TEST</ion-col>
+                <ion-col class="con2-txt"></ion-col>
+             </ion-row> 
+             <ion-row>
+                <ion-col size="10" class="con-txt" >ABDOMEN AP</ion-col>
+                <ion-col class="con2-txt"></ion-col>
+             </ion-row>   
+             <ion-row>
+                <ion-col size="10" class="con-txt" >HAEMOGLOBIN</ion-col>
+                <ion-col class="con2-txt">16.00</ion-col>
+             </ion-row>                                    
+          </ion-grid>
+        </div>     
+      </div>
+   </ion-list> 
+    <ion-list *ngSwitchCase="'seven'">
+      <div padding class='spaces'>
+        <div class="pandora-box">
+          <div class="txt-box">
+            Comman Cough & Cold. (16/02/2019)<br>
+            <br>
+            Faver - Yes.<br>
+            Runny Nose - Yes.<br>
+            Soure Throat - No.<br>
+            Checked Lungs - Normal.<br>
+          </div>
+        </div>           
+      </div>
+    </ion-list>               
+  </div>
+</ion-content>

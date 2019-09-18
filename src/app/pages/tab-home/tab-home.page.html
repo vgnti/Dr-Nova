@@ -1,0 +1,149 @@
+<ion-header no-border>
+   <ion-toolbar>
+      <ion-buttons slot="start">
+         <ion-menu-button autoHide="false" ></ion-menu-button>
+         <div class="head_mid"> &nbsp; </div>
+         <div class="head_end" routerLink="notifications">
+            <ion-icon name="notifications-outline" class="icon"></ion-icon>
+         </div>
+         <div class="head_end">
+            <ion-icon name="search" class="icon"></ion-icon>
+         </div>           
+      </ion-buttons>
+   </ion-toolbar>
+</ion-header> 
+ 
+<div>
+  <h1>Dashboard</h1>
+  <ion-segment [(ngModel)]="section">
+    <ion-segment-button value="one">
+      <ion-text class="label">Outpatient</ion-text>
+    </ion-segment-button>
+    <ion-segment-button value="two">
+      <ion-text class="label">Inpatient</ion-text>
+    </ion-segment-button>     
+  </ion-segment>
+</div>
+    
+<ion-content [scrollEvents]="true">
+
+   <div [ngSwitch]="section" Class="labela">
+
+      <ion-list *ngSwitchCase="'one'">
+         <div padding class='spaces'>
+            <div class="pandora-box" routerLink="appt">
+               <div padding class="pandora-greed">
+                  <img src="assets/images/Appt.png">
+               </div>
+               <div class="pandora-envy">
+                  &nbsp; Appointment
+               </div>
+               <div class="pandora-hate">
+                   5
+               </div>
+            </div>
+         </div>        
+         <div padding class='spaces'>
+            <div class="pandora-box" routerLink="regd">
+               <div padding class="pandora-greed">
+                  <img src="assets/images/Regd.png">
+               </div>
+               <div class="pandora-envy">
+                  &nbsp; Registered
+               </div>
+               <div class="pandora-hate">
+                  8
+               </div>
+            </div>
+         </div>
+         <div padding class='spaces'>
+            <div class="pandora-box" routerLink="seen">
+               <div padding class="pandora-greed">
+                  <img src="assets/images/Seen.png">
+               </div>
+               <div class="pandora-envy">
+                  &nbsp; Seen
+               </div>
+               <div class="pandora-hate">
+                  3
+               </div>
+            </div>
+         </div> 
+         <div padding class='spaces'>
+            <div class="pandora-box" routerLink="kiv">
+               <div padding class="pandora-greed">
+                  <img src="assets/images/KIV.png">
+               </div>
+               <div class="pandora-envy">
+                  &nbsp; KIV
+               </div>
+               <div class="pandora-hate">
+                  1
+               </div>
+            </div>
+         </div>  
+         <div padding class='spaces'>
+            &nbsp;
+         </div>
+
+      </ion-list>
+   
+      <ion-list *ngSwitchCase="'two'">
+
+         <div padding class='spaces2'>
+            <div class="pandora-box2" routerLink="iemr">
+               <div padding class="pandora-hope" >
+                  <img src="assets/images/pp1.png">
+               </div>
+               <div class="pandora-joy">
+                  <strong>Tan Sri William Howard Wilcox</strong><br>
+                  Male, 70Y 11M<br>
+                  Malaysia<br>
+                  Recovery Room<br>
+                  VIP Room 1
+               </div>
+               <div class="pandora-happy">
+                  EMR
+               </div>
+            </div>
+         </div>        
+         <div padding class='spaces2'>
+            <div class="pandora-box2" routerLink="notfound">
+               <div padding class="pandora-hope">
+                  <img src="assets/images/W-icon.png">
+               </div>
+               <div class="pandora-joy">
+                  <strong>Liu Yifei</strong><br>
+                  Famale, 24Y 11M<br>
+                  China<br>
+                  Recovery Room<br>
+                  VIP Room 2
+               </div>
+               <div class="pandora-happy">
+                  EMR
+               </div>
+            </div>
+         </div>
+         <div padding class='spaces2'>
+            <div class="pandora-box2" routerLink="internal">
+               <div padding class="pandora-hope">
+                  <img src="assets/images/M-icon.png">
+               </div>
+               <div class="pandora-joy">
+                  <strong>Zheng Yu Tung</strong><br>
+                  Male, 27Y 6M<br>
+                  Malaysia<br>
+                  Cardiac Care Unit<br>
+                  ICCU-Bed 1
+               </div>
+               <div class="pandora-happy">
+                  EMR
+               </div>
+            </div>
+         </div>                
+
+      </ion-list>
+      
+   </div>
+      
+</ion-content>

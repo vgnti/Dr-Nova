@@ -1,0 +1,163 @@
+.head-box {
+	align-items       : center;
+	background        : #8FD3FF;
+	display           : flex;
+	overflow          : hidden;
+	margin-bottom     : 10px !important;
+	cursor            : pointer;
+	height            : 110px;
+	-webkit-box-align : center;
+}
+
+.head-img{
+	width: 100px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	img{min-height: 100%;}
+}
+
+.head-txt{
+	color          : #26488C;
+	font-size      : 20pt;
+	text-align     : left;
+	overflow       : hidden;
+	padding-bottom : 5px !important;
+	padding-top    : 5px !important;
+	padding-left   : 20px !important;
+	width          : 500px;
+}
+
+.head-button{
+	flex        : 2;
+	display     : flex;
+	color       : #203B8C;
+	font-size   : 25pt;	
+	align-items : center;
+	overflow    : hidden;
+}
+
+.head_mid {
+    width       : 228px;
+}
+
+.head_end {
+	flex        : 2;
+	display     : flex;
+	color       : #203B8C;
+	width       : 35px;
+	font-size   : 18pt;	
+	align-items : center;
+	overflow    : hidden;
+}
+
+.icon {
+	color       : #203B8C;
+	width       : 50px;
+}
+
+ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+}
+
+.wrap-cover{
+	height: 70px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	z-index: 10;
+	.bg-profile{
+		width: 150%;
+		height: 250%;
+		border-radius: 50%;
+		overflow: hidden;
+		justify-content: center;
+		align-items: center;
+		flex: none;
+		display: flex;
+		img{
+		  max-width: 100%;
+		}
+	}
+}
+
+.avt-text{ 
+    background-repeat     : no-repeat;
+    background-attachment : fixed;
+    color                 : #203B8C;
+    font-weight           : bold;
+    font-size             : 25px;
+	text-align            : center;
+	text-anchor           : middle;
+}
+
+.text-link {
+	text-decoration: none;
+	cursor: hand;
+}
+
+.spaces {
+    height: 145px; 
+}
+
+.pandora-box{
+	align-items       : top;
+	background        : #8FD3FF;
+	border-radius     : 5px;
+	box-shadow        : 0px 2px 5px 0px rgba(31, 59, 140, 1);
+	height            : 300pt;
+	display           : flex;
+	overflow          : hidden;
+	margin-bottom     : 10px !important;
+	cursor            : pointer;
+	-webkit-box-align : center;
+}
+
+.pandora-hope{
+	width: 100px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	img{min-height: 100%;}
+}
+
+.pandora-joy{
+	color          : #203B8C;
+	flex           : 6;
+	font-size      : 10pt;
+	overflow       : hidden;
+	padding-bottom : 5px !important;
+	padding-top    : 5px !important;
+	width          : 200px;
+	.description{
+		height: 35px;
+		overflow: hidden;
+	}
+}
+
+.pandora-happy{
+	flex        : 2;
+	display     : flex;
+	color       : #203B8C;
+	font-size   : 10pt;	
+	align-items : center;
+	overflow    : hidden;
+}
+
+.txt-box {
+	padding     : 5px;
+	padding-top : 5px;
+	font-size   : 10pt;
+	color       : #26488C;
+	align-items : top;
+}
+
+.h1 {
+	font-size       : 10pt;
+	font-weight     : bold;
+	color           : #26488C;
+	text-decoration : underline;
+}

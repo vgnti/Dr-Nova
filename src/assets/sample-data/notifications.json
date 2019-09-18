@@ -1,0 +1,42 @@
+{
+    "today":[
+      {
+        "name": "Nurse Judith",
+        "image": "./assets/images/nova.png",
+        "message": "Miss Yen 1:00pm Appointment cancel",
+        "date": "10:00 am"
+      },
+      {
+        "name": "Nurse Nora",
+        "image": "./assets/images/nova.png",
+        "message": "Please check the medicine registration number",
+        "date": "11:00 am"
+      }
+    ],
+    "yesterday":[
+      {
+        "name": "Nurse Diane",
+        "image": "./assets/images/nova.png",
+        "message": "Your oder of 3M Littmann Master Cardiology Stethoscope has arrived, please come to level 2 nurse station to collect.",
+        "date": "8:12 am"
+      },
+      {
+        "name": "Dr. George",
+        "image": "./assets/images/nova.png",
+        "message": "Are you going to the Medical Lab today?",
+        "date": "9:11 am"
+      },
+      {
+        "name": "Dr. Phillip",
+        "image": "./assets/images/nova.png",
+        "message": "Thanks again for the lunch, it was delicious!",
+        "date": "2:00 pm"
+      },
+      {
+        "name": "Nurse Nora",
+        "image": "./assets/images/nova.png",
+        "message": "Radiology department has send Mr Kim chest xray.",
+        "date": "3:34 pm"
+      }
+  ]
+}

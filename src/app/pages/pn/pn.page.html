@@ -1,0 +1,35 @@
+<ion-header no-border>
+   <ion-toolbar>
+      <ion-buttons slot="start">
+         <ion-menu-button autoHide="false"></ion-menu-button>
+         <div class="head_mid"> &nbsp; </div>
+         <div class="head_end" routerLink="notifications">
+            <ion-icon name="notifications-outline" class="icon"></ion-icon>
+         </div>
+         <div class="head_end">
+            <ion-icon name="search" class="icon"></ion-icon>
+         </div>
+      </ion-buttons>
+   </ion-toolbar>
+</ion-header>
+
+<div class="head-txt">
+   <strong>Patient Profile</strong><br>
+</div>
+
+<ion-content [scrollEvents]="true">
+  	
+   <div padding class='spaces'>
+      <div class="pandora-box">
+        <div class="txt-box">
+          Comman Cough & Cold. (16/02/2019)<br>
+          <br>
+          Faver - Yes.<br>
+          Runny Nose - Yes.<br>
+          Soure Throat - No.<br>
+          Checked Lungs - Normal.<br>
+        </div>
+      </div>           
+    </div>
+
+</ion-content>

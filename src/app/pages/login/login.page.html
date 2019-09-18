@@ -1,0 +1,49 @@
+<ion-content padding class="background no-scroll">
+  
+  <div class="wrap-login">
+    <div class="main-form" >
+       <div class="block">
+          &nbsp;
+       </div>
+       <div class="top-brand">
+         &nbsp;
+       </div>
+       <form class=" " [formGroup]="loginForm" (submit)="loginUser()" novalidate>
+          <ion-item>
+             <div>
+                <ion-icon class="ion-img" name="person"></ion-icon>
+             </div>
+             <div class="int-size"> 
+                <ion-input formControlName="email" type="email" placeholder="Your email address" 
+                  [class.invalid]="!loginForm.controls.email.valid && loginForm.controls.email.dirty"></ion-input>
+             </div>   
+          </ion-item>
+               
+           <div class="" *ngIf="!loginForm.controls.email.valid  && loginForm.controls.email.dirty">
+            Please enter a valid email.
+           </div>
+   
+           <ion-item>
+             <div>
+               <ion-icon class="ion-img" name="lock"></ion-icon>
+             </div>
+             <div class="int-size">
+               <ion-input formControlName="password" type="password" placeholder="Your password" 
+                  [class.invalid]="!loginForm.controls.password.valid && loginForm.controls.password.dirty"></ion-input>
+             </div>
+           </ion-item>
+   
+           <div class="" *ngIf="!loginForm.controls.password.valid && loginForm.controls.password.dirty">
+             <p class="">Your password needs more than 6 characters.</p>
+           </div>
+   
+           <hr/>
+   
+           <ion-button shape="round" expand="block" fill="solid" class="uppercase spacing1 fw-600" type="submit">
+               Login Now
+           </ion-button>
+       </form>
+    </div>
+  </div>
+
+</ion-content>

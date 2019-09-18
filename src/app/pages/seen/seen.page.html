@@ -1,0 +1,47 @@
+<ion-header no-border>
+   <ion-toolbar>
+      <ion-buttons slot="start">
+         <ion-menu-button autoHide="false"></ion-menu-button>
+      </ion-buttons>
+   </ion-toolbar>
+</ion-header> 
+
+<div class="head-txt">
+   <strong>Seen List</strong><br>
+</div>
+
+<ion-content [scrollEvents]="true">
+  	
+  <div padding class='spaces'>
+    <div class="pandora-box" [routerLink]="OpemrSettingsPath" routerDirection="forward">
+       <div padding class="pandora-hope">
+          <img src="assets/images/pp4.png">
+       </div>
+       <div class="pandora-joy">
+          <strong>Kim Min Seok</strong><br>
+          Male, 27Y 6M<br>
+          Korean<br>
+          08:15
+       </div>
+       <div class="pandora-happy">
+          EMR
+       </div>
+    </div>
+ </div>
+ <div padding class='spaces'>
+   <div class="pandora-box" [routerLink]="OpemrSettingsPath" routerDirection="forward">
+     <div padding class="pandora-hope" >
+        <img src="assets/images/pp3.png">
+     </div>
+     <div class="pandora-joy">
+        <strong>Kevin Rowe</strong><br>
+        Male, 27Y 6M<br>
+        America<br>
+        12:15
+     </div>
+     <div class="pandora-happy">
+        EMR
+     </div>
+  </div>
+</div>
+</ion-content>

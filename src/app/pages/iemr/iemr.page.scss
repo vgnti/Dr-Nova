@@ -1,0 +1,136 @@
+.head-box {
+	align-items       : center;
+	background        : #E5F2B6;
+	display           : flex;
+	overflow          : hidden;
+	margin-bottom     : 10px !important;
+	cursor            : pointer;
+	height            : 110px;
+	-webkit-box-align : center;
+}
+
+.head-img{
+	width: 100px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	img{min-height: 100%;}
+}
+
+.head-txt{
+	color          : #26488C;
+	font-size      : 20pt;
+	text-align     : left;
+	overflow       : hidden;
+	padding-bottom : 5px !important;
+	padding-top    : 5px !important;
+	padding-left   : 20px !important;
+	width          : 500px;
+}
+
+.head_mid {
+    width : 228px;
+}
+
+.head_end {
+	flex        : 2;
+	display     : flex;
+	color       : #203B8C;
+	width       : 35px;
+	font-size   : 18pt;	
+	align-items : center;
+	overflow    : hidden;
+}
+
+.icon {
+	color     : #203B8C;
+	width     : 50px;
+}
+
+ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+}
+
+.wrap-cover{
+	height: 30px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	z-index: 10;
+	.bg-profile{
+		width: 150%;
+		height: 450%;
+		border-radius: 50%;
+		overflow: hidden;
+		justify-content: center;
+		align-items: center;
+		flex: none;
+		display: flex;
+		img{
+		  max-width: 100%;
+		}
+	}
+}
+
+.avt-text{ 
+    background-repeat     : no-repeat;
+    background-attachment : fixed;
+    color                 : #203B8C;
+    font-weight           : bold;
+    font-size             : 25px;
+	text-align            : center;
+	text-anchor           : middle;
+}
+
+.label {
+	color          : #203B8C;
+	font-size      : 13pt;    
+	text-transform : none;
+}
+
+.pandora-box{
+	align-items       : top;
+	background-color  : #E5F2B6;
+	border-radius     : 5px;
+	box-shadow        : 0px 2px 5px 0px rgba(31, 59, 140, 1);
+    color             : white;
+	display           : flex;
+	font-size         : 12pt;
+	height            : 300pt;
+	overflow          : hidden;
+	margin-bottom     : 10px !important;
+	-webkit-box-align : center;
+}
+
+.con-txt{
+	font-size   : 10pt;
+	font-weight : bold;
+	color       : #26488C;
+}
+
+.con2-txt{
+	font-size   : 10pt;
+	color       : #26488C;
+}
+
+.img-icon {
+	width: 28%;
+	height: 28%;
+}
+
+.txt-box {
+	padding     : 5px;
+	padding-top : 5px;
+	font-size   : 10pt;
+	color       : #26488C;
+	align-items : top;
+}
+
+.h1 {
+	font-size       : 10pt;
+	font-weight     : bold;
+	color           : #26488C;
+	text-decoration : underline;
+}

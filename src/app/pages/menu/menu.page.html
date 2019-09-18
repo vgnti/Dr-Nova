@@ -1,0 +1,34 @@
+<ion-split-pane>
+    <ion-menu contentId="content">
+   
+      <ion-header no-border >
+        <ion-toolbar >
+          <ion-title class="fs-23">Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+   
+      <ion-content>
+
+         <ion-list no-lines no-border >
+            
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of pages" no-lines no-border>
+            <ion-item [routerLink]="p.url" routerDirection="root" [class.active-item]="selectedPath.startsWith(p.url)" class="fs-18" no-lines no-border >            
+                <ion-icon name="home" slot="start" class="icon"></ion-icon>
+                {{ p.title }}
+            </ion-item>
+          </ion-menu-toggle> 
+   
+          <ion-item tappable routerLink="/login" routerDirection="root" class="fs-18" no-lines no-border >
+            <ion-icon name="log-out" slot="start" class="icon"></ion-icon>
+              Logout
+          </ion-item>
+   
+         </ion-list>
+   
+      </ion-content>
+   
+    </ion-menu>
+   
+    <ion-router-outlet id="content" main></ion-router-outlet>
+   
+ </ion-split-pane>
